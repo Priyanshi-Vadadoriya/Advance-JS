@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+
+
+   <script>
+
+// const data1 = ['php', 'php', 'php', 'php', 'react', 'react', 'wd'];
+
+// const result = data1.reduce((val, item) => {
+//   val[item] = (val[item] || 0 ) + 1;
+//   return val;
+// }, {});
+// console.log(result);
+    
+// const data = [2,3,4,5];
+// const arr = data.reduce((curr,next)=>{
+//    return curr+next;
+// });
+// console.log(arr);
+
+// const data1 = [2,3,4,5];
+// const arr1 = data1.map((val,ind,arr)=>{
+//    return val*2;
+// });
+// console.log(arr1);
+
+// const data2 = [2,3,4,5];
+// const arr2 = data2.filter((val,ind,arr)=>{
+//    return val < 4;
+// });
+// console.log(arr2);
+
+
+   </script> 
+</body>
+</html>
+
+
+<!-- const data1 = ['php', 'php', 'php', 'php', 'react', 'react', 'wd'];
+
+const result = data1.reduce((val, item) => {
+  // Check if val[item] exists (truthy value). If it exists, use its current value; otherwise, use 0.
+  if (val[item]) {
+    val[item] = val[item] + 1; // Increment the count of the current item.
+  } else {
+    val[item] = 1; //Initialize the count of the current item to 1 (since it doesn't exist yet).
+  }
+  return val;
+}, {});
+
+console.log(result); -->
+
+
+
+<!-- var pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'dog'];
+
+var petCounts = pets.reduce(function(obj, pet){
+if (!obj[pet]) {
+        obj[pet] = 1;
+} else {
+obj[pet]++;  
+}
+return obj;
+}, {});
+
+console.log(petCounts);  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+class Father
+  {
+    
+    father()
+    {
+        var f =100;
+        document.write( "Parent property" + " = " + f + " %");
+        document.write("<br> ");
+
+    }
+  }
+
+
+class Mother extends Father
+       {
+
+    
+        property(total,mi)
+            {
+                var pp =  total - mi; 
+
+                document.write("Child property" + " = " + pp + " %");
+                document.write("<br> ");
+            }
+
+        
+       }
+
+    
+      var fat = new Father;
+      fat.father()
+      var mom = new Mother;
+      mom.father()
+      const son = new Mother;
+      const daughter = new Mother;
+      son.property(100,70);
+      daughter.property(100,30);
+    
+</script>
+
+</body>
+</html>

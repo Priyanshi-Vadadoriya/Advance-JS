@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // class Test 
+        // {
+        //     constructor()
+        //     {
+        //         console.log("Hello Class.!");
+        //     }
+        // }
+
+        // const x = new Test;
+
+
+        // function T(xyz)
+        // {
+        //     return xyz;
+        // }
+
+        // const test123 = new T();
+        // console.log(test123)
+       
+
+        // ===================constructor==================
+        class Test
+        {
+            constructor(name,age)
+            {
+                this.studentname = name;
+                this.studentage = age;
+                console.log("constructor...." );
+            }   
+            hello()
+            {
+                console.log("hello" +" "+ this.studentname + "your age is......" + this.studentage);
+            }
+        }
+
+        const obj = new Test("priyanshi",20);
+        obj.hello();
+    </script>
+    
+</body>
+</html>
